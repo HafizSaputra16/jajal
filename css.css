@@ -1,0 +1,128 @@
+/* Modern, clean styling for the simple PHP app */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    padding: 2rem;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2575fc;
+    margin-bottom: 1rem;
+}
+
+.login-form label,
+.user-profile p,
+.home p {
+    display: block;
+    text-align: left;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1.8px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+button {
+    margin-top: 1.2rem;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #2575fc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1856c9;
+}
+
+.error {
+    background-color: #ffdddd;
+    border: 1px solid #ff5c5c;
+    color: #a70000;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.user-profile p strong {
+    color: #2575fc;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
+a.button {
+    padding: 0.6rem 1.2rem;
+    background-color: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #1856c9;
+}
+
+.button-logout {
+    background-color: #ff4c4c;
+}
+
+.button-logout:hover {
+    background-color: #c12e2e;
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 95%;
+        padding: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
